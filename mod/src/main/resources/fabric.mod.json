@@ -5,7 +5,7 @@
   "name": "${name}",
   "description": "Splits Minecraft HUD elements into independent transparent layers and shares them with OBS through GPU texture sharing.",
   "authors": ["OBS Layer Cast contributors"],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "icon": "assets/layercast/icon.png",
   "contact": {
     "homepage": "https://github.com/Ronal-SHEN/OBS-Layer-Cast",
