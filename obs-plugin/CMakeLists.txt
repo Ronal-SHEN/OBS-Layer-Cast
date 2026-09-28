@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(obs-layercast VERSION 0.1.0 LANGUAGES C)
+project(obs-layercast VERSION 1.0.0 LANGUAGES C)
 
 # The plugin only uses the stable C API of libobs, so it needs the public headers of a matching
 # obs-studio release plus the libobs binary of the installed OBS to link against.

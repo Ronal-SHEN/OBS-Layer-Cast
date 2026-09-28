@@ -3,8 +3,8 @@ plugins {
     id("dev.kikugie.loom-back-compat")
 }
 
-version = "${property("mod.version")}+${sc.current.version}"
-base.archivesName = "${property("mod.id") as String}-fabric"
+version = "${property("mod.version")}+${sc.properties.get<String>("mod.mc_label")}"
+base.archivesName = "${property("mod.id") as String}+fabric"
 
 val requiredJava: JavaVersion = when {
     sc.current.parsed >= "26.1" -> JavaVersion.VERSION_25
@@ -133,6 +133,9 @@ tasks {
 
     withType<Jar> {
         from(rootProject.file("../LICENSE")) { rename { "${it}_layercast" } }
+        // layercast+<loader>+<mod version>+<minecraft versions>.jar ("+" instead of Gradle's "-" before the version)
+        archiveFileName = archiveBaseName.zip(archiveVersion) { name, version -> "$name+$version" }
+            .zip(archiveClassifier.orElse("")) { name, classifier -> if (classifier.isEmpty()) "$name.jar" else "$name-$classifier.jar" }
     }
 
     register<Copy>("buildAndCollect") {

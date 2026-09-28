@@ -26,8 +26,8 @@ import java.util.Locale;
  * LayerCast OBS plugin is running, next to a button to download it.
  */
 public final class GuiConfigs extends GuiConfigsBase {
-    // TODO: replace with the real download page of the OBS plugin.
-    public static final String OBS_PLUGIN_URL = "https://github.com/OWNER/OBS-Layer-Cast/releases/latest";
+    /** Where the OBS plugin is downloaded from (the "Get OBS plugin" button). */
+    public static final String OBS_PLUGIN_URL = "https://github.com/Ronal-SHEN/OBS-Layer-Cast/releases";
 
     private static final int TABS_Y = 26;
     private static final int STATUS_Y = 50;

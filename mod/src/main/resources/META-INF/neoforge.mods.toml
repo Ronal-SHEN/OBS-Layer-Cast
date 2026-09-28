@@ -7,6 +7,8 @@ modId = "${id}"
 displayName = "${name}"
 version = "${version}"
 authors = "OBS Layer Cast contributors"
+displayURL = "https://github.com/Ronal-SHEN/OBS-Layer-Cast"
+logoFile = "assets/layercast/icon.png"
 description = "Splits Minecraft HUD elements into independent transparent layers and shares them with OBS through GPU texture sharing."
 
 [[mixins]]

@@ -4,13 +4,14 @@
 mod.id = "layercast"
 mod.name = "OBS Layer Cast"
 mod.group = "dev.layercast"
-mod.version = "0.1.0"
+mod.version = "1.0.0"
 
 deps.fabric_loader = "0.19.5"
 loomx.loom_version = "1.18-SNAPSHOT"
 deps.foxified_classtweaker = "jJ23wJ7U"   # 0.1.0-alpha.4, required by MaFgLib at runtime
 
 ["26.1.2"]
+mod.mc_label = "26.1.x"   # Minecraft versions in the jar name
 mod.mc_releases = ["26.1", "26.1.1", "26.1.2"]
 
 [fabric."26.1.2"]
@@ -25,6 +26,7 @@ deps.neo_loader = "26.1.2.109"
 deps.mafglib = "kGWEcTQS"   # MaFgLib 0.5.6+mc26.1.2
 
 ["26.2"]
+mod.mc_label = "26.2"   # Minecraft versions in the jar name
 mod.mc_releases = ["26.2"]
 
 [fabric."26.2"]
@@ -39,6 +41,7 @@ deps.neo_loader = "26.2.0.88"
 deps.mafglib = "a9U0m3ou"   # MaFgLib 0.5.3+mc26.2 (MaLiLib NeoForge port)
 
 ["26.3"]
+mod.mc_label = "26.3"   # Minecraft versions in the jar name
 mod.mc_releases = ["26.3"]
 
 [fabric."26.3"]

@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
  */
 public final class LayerCast {
     public static final String MOD_ID = "layercast";
-    public static final String VERSION = /*$ mod_version*/ "0.1.0";
+    public static final String VERSION = /*$ mod_version*/ "1.0.0";
     public static final String MINECRAFT = /*$ minecraft*/ "26.2";
     public static final Logger LOGGER = LoggerFactory.getLogger("LayerCast");
 
