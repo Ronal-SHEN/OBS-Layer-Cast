@@ -2,7 +2,7 @@
  * OBS Layer Cast shared-memory directory protocol (v1).
  *
  * This header is the single source of truth for the layout; the Java side mirrors it in
- * mod/src/main/java/dev/layercast/share/Protocol.java. Keep both in sync.
+ * mod/src/main/java/starship/layercast/share/Protocol.java. Keep both in sync.
  *
  * The directory is a named shared-memory block:
  *   Windows : "Local\LayerCast.v1.<channel>"   (CreateFileMappingW, pagefile backed)

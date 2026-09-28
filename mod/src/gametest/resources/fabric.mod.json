@@ -5,6 +5,6 @@
   "name": "OBS Layer Cast end-to-end tests",
   "environment": "client",
   "entrypoints": {
-    "fabric-client-gametest": ["dev.layercast.test.LayerCastClientGameTest", "dev.layercast.test.LayerCastBenchmark", "dev.layercast.test.LayerCastComponentTest"]
+    "fabric-client-gametest": ["starship.layercast.test.LayerCastClientGameTest", "starship.layercast.test.LayerCastBenchmark", "starship.layercast.test.LayerCastComponentTest"]
   }
 }

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>obs-layercast</string>
 	<key>CFBundleIdentifier</key>
-	<string>dev.layercast.obs-layercast</string>
+	<string>starship.layercast.obs-layercast</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

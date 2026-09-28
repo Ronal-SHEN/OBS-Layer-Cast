@@ -224,7 +224,7 @@ mod/                              Gradle + Stonecutter：每个 (MC 版本 × �
   stonecutter.properties.toml     各版本依赖（Fabric API、MaLiLib/MaFgLib、NeoForge…）
   stonecutter.gradle.kts          26.3 的包重定位（blaze3d → renderpearl）字符串替换
   buildSrc/…/LayerCastMixins.kt   按版本/加载器生成 mixin 列表
-  src/main/java/dev/layercast/
+  src/main/java/starship/layercast/
     LayerCast                     各挂钩点的入口；任何异常都只禁用本模组，绝不让游戏崩溃
     LayerProfiler                 可选的分阶段耗时统计（-Dlayercast.profile=true）
     layer/                        Layers（内置 + 模组图层表）、LayerCapture（作用域栈 + 单一去向分流）、ModAttribution（按调用栈判断模组）、LayerRenderer（独立 GuiRenderer + 共用离屏目标）、NameTagLayer（名字标签：第二次绘制、从 game 中去掉、手臂遮挡）、LayerPipelines（图层专用管线）、LayerDebug（导出 PNG）

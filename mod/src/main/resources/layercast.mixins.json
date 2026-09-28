@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "dev.layercast.mixin",
+  "package": "starship.layercast.mixin",
   "compatibilityLevel": "${java}",
   "mixinPriority": 1500,
   "client": ${client_mixins},

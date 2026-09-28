@@ -3,7 +3,7 @@
 # Modrinth version ids are used where a project publishes the same version number for several Minecraft versions.
 mod.id = "layercast"
 mod.name = "OBS Layer Cast"
-mod.group = "dev.layercast"
+mod.group = "starship.layercast"
 mod.version = "1.0.0"
 
 deps.fabric_loader = "0.19.5"

@@ -13,8 +13,8 @@
   },
   "environment": "client",
   "entrypoints": {
-    "client": ["dev.layercast.fabric.LayerCastFabric"],
-    "modmenu": ["dev.layercast.fabric.ModMenuIntegration"]
+    "client": ["starship.layercast.fabric.LayerCastFabric"],
+    "modmenu": ["starship.layercast.fabric.ModMenuIntegration"]
   },
   "mixins": ["layercast.mixins.json"],
   "depends": {
