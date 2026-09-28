@@ -1,0 +1,27 @@
+license = "MIT"
+modLoader = "javafml"
+loaderVersion = "[1,)"
+
+[[mods]]
+modId = "${id}"
+displayName = "${name}"
+version = "${version}"
+authors = "OBS Layer Cast contributors"
+description = "Splits Minecraft HUD elements into independent transparent layers and shares them with OBS through GPU texture sharing."
+
+[[mixins]]
+config = "layercast.mixins.json"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft}"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.${id}]]
+modId = "mafglib"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"

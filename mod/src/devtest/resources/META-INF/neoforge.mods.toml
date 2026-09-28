@@ -1,0 +1,16 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "layercast_devtest"
+displayName = "OBS Layer Cast dev test"
+version = "1.0.0"
+description = "Automated end-to-end scenario for NeoForge development runs. Not shipped."
+
+[[dependencies.layercast_devtest]]
+modId = "layercast"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"

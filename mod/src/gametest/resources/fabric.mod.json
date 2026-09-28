@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "layercast-test",
+  "version": "1.0.0",
+  "name": "OBS Layer Cast end-to-end tests",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-client-gametest": ["dev.layercast.test.LayerCastClientGameTest", "dev.layercast.test.LayerCastBenchmark", "dev.layercast.test.LayerCastComponentTest"]
+  }
+}

@@ -1,0 +1,14 @@
+.gradle/
+build/
+run/
+out/
+.idea/
+*.iml
+.kotlin/
+.DS_Store
+mod/versions/*/build/
+mod/versions/*/.gradle/
+obs-plugin/build*/
+obs-plugin/.deps/
+__pycache__/
+*.pyc

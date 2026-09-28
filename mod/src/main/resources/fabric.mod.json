@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Splits Minecraft HUD elements into independent transparent layers and shares them with OBS through GPU texture sharing.",
+  "authors": ["OBS Layer Cast contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.layercast.fabric.LayerCastFabric"],
+    "modmenu": ["dev.layercast.fabric.ModMenuIntegration"]
+  },
+  "mixins": ["layercast.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader}",
+    "minecraft": "${minecraft}",
+    "fabric-rendering-v1": "*",
+    "fabric-lifecycle-events-v1": "*",
+    "malilib": "*",
+    "java": ">=25"
+  }
+}

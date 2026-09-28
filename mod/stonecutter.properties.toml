@@ -1,0 +1,48 @@
+# Centralised per-version / per-loader properties.
+# See https://stonecutter.kikugie.dev/wiki/config/properties#centralized-properties
+# Modrinth version ids are used where a project publishes the same version number for several Minecraft versions.
+mod.id = "layercast"
+mod.name = "OBS Layer Cast"
+mod.group = "dev.layercast"
+mod.version = "0.1.0"
+
+deps.fabric_loader = "0.19.5"
+loomx.loom_version = "1.18-SNAPSHOT"
+deps.foxified_classtweaker = "jJ23wJ7U"   # 0.1.0-alpha.4, required by MaFgLib at runtime
+
+["26.1.2"]
+mod.mc_releases = ["26.1", "26.1.1", "26.1.2"]
+
+[fabric."26.1.2"]
+mod.mc_compat = ">=26.1 <26.2"
+deps.fabric_api = "0.155.3+26.1.2"
+deps.malilib = "FItuNokS"   # malilib 0.28.12
+deps.modmenu = "18.0.2"
+
+[neoforge."26.1.2"]
+mod.mc_compat = "[26.1, 26.2)"
+deps.neo_loader = "26.1.2.109"
+deps.mafglib = "kGWEcTQS"   # MaFgLib 0.5.6+mc26.1.2
+
+["26.2"]
+mod.mc_releases = ["26.2"]
+
+[fabric."26.2"]
+mod.mc_compat = "~26.2"
+deps.fabric_api = "0.161.0+26.2"
+deps.malilib = "KvjmGjAV"   # malilib 0.29.6
+deps.modmenu = "20.0.2"
+
+[neoforge."26.2"]
+mod.mc_compat = "[26.2, 26.3)"
+deps.neo_loader = "26.2.0.88"
+deps.mafglib = "a9U0m3ou"   # MaFgLib 0.5.3+mc26.2 (MaLiLib NeoForge port)
+
+["26.3"]
+mod.mc_releases = ["26.3"]
+
+[fabric."26.3"]
+mod.mc_compat = "~26.3"
+deps.fabric_api = "0.161.0+26.3"
+deps.malilib = "DPcJACN6"   # malilib 0.30.1
+deps.modmenu = "21.0.0"
