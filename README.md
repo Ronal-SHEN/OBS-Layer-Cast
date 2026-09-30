@@ -51,11 +51,35 @@ All layers have the window's size and a transparent background, so they line up 
 
 **OBS plugin** (OBS 32.x) — download it from [Releases](https://github.com/Ronal-SHEN/OBS-Layer-Cast/releases):
 
-| OS | Location |
-|---|---|
-| Windows | Extract `obs-layercast-windows.zip` into `C:\ProgramData\obs-studio\plugins\` |
-| macOS (13+, Apple silicon) | Extract `obs-layercast-macos.zip` into `~/Library/Application Support/obs-studio/plugins/` |
-| Linux | `obs-layercast.so` → `~/.config/obs-studio/plugins/obs-layercast/bin/64bit/`, `data/` → the `data/` folder next to it |
+- **Windows**: extract `obs-layercast-windows.zip` into `C:\ProgramData\obs-studio\plugins\`. The folder should look like:
+
+  ```
+  C:\ProgramData\obs-studio\plugins\obs-layercast\
+  ├── bin\
+  │   └── 64bit\
+  │       └── obs-layercast.dll
+  └── data\
+  ```
+
+- **macOS** (13+, Apple silicon): extract `obs-layercast-macos.zip` into `~/Library/Application Support/obs-studio/plugins/`. The folder should look like:
+
+  ```
+  ~/Library/Application Support/obs-studio/plugins/obs-layercast.plugin/
+  └── Contents/
+      ├── MacOS/
+      │   └── obs-layercast
+      └── Resources/
+  ```
+
+- **Linux**: extract `obs-layercast-linux-x86_64.zip` or `obs-layercast-linux-arm64.zip` into `~/.config/obs-studio/plugins/`. The folder should look like:
+
+  ```
+  ~/.config/obs-studio/plugins/obs-layercast/
+  ├── bin/
+  │   └── 64bit/
+  │       └── obs-layercast.so
+  └── data/
+  ```
 
 The plugin needs its `data/` folder (the shader that draws the layers, and the UI text); without it OBS does not load the plugin. On Windows and Linux `data/` sits next to the plugin binary, as `obs-layercast/data/`, which is why both are shipped as a zip. On macOS it is inside the `.plugin` bundle (`Contents/Resources/`); the bundle is itself a folder, so it is zipped too.
 

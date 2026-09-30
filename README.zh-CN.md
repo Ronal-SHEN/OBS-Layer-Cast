@@ -51,11 +51,35 @@
 
 **OBS 插件**（OBS 32.x）：从 [Releases](https://github.com/Ronal-SHEN/OBS-Layer-Cast/releases) 下载。
 
-| 系统 | 安装位置 |
-|---|---|
-| Windows | 把 `obs-layercast-windows.zip` 解压到 `C:\ProgramData\obs-studio\plugins\` |
-| macOS（13+，Apple 芯片） | 把 `obs-layercast-macos.zip` 解压到 `~/Library/Application Support/obs-studio/plugins/` |
-| Linux | `obs-layercast.so` → `~/.config/obs-studio/plugins/obs-layercast/bin/64bit/`，`data/` → 同级的 `data/` 目录 |
+- **Windows**：把 `obs-layercast-windows.zip` 解压到 `C:\ProgramData\obs-studio\plugins\`。目录应该是：
+
+  ```
+  C:\ProgramData\obs-studio\plugins\obs-layercast\
+  ├── bin\
+  │   └── 64bit\
+  │       └── obs-layercast.dll
+  └── data\
+  ```
+
+- **macOS**（13+，Apple 芯片）：把 `obs-layercast-macos.zip` 解压到 `~/Library/Application Support/obs-studio/plugins/`。目录应该是：
+
+  ```
+  ~/Library/Application Support/obs-studio/plugins/obs-layercast.plugin/
+  └── Contents/
+      ├── MacOS/
+      │   └── obs-layercast
+      └── Resources/
+  ```
+
+- **Linux**：把 `obs-layercast-linux-x86_64.zip` 或 `obs-layercast-linux-arm64.zip` 解压到 `~/.config/obs-studio/plugins/`。目录应该是：
+
+  ```
+  ~/.config/obs-studio/plugins/obs-layercast/
+  ├── bin/
+  │   └── 64bit/
+  │       └── obs-layercast.so
+  └── data/
+  ```
 
 插件需要它的 `data/` 文件夹（绘制图层用的着色器和界面文字），缺少它 OBS 不会加载插件。Windows 和 Linux 上 `data/` 与插件程序放在同一个 `obs-layercast/` 文件夹里，所以两者一起打成 zip 发布；macOS 上它在 `.plugin` 包内部（`Contents/Resources/`），而 `.plugin` 本身就是一个文件夹，所以同样打成 zip。
 
