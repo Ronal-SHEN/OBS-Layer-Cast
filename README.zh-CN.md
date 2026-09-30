@@ -53,8 +53,8 @@
 
 | 系统 | 安装位置 |
 |---|---|
-| Windows | `obs-layercast.dll` → `C:\ProgramData\obs-studio\plugins\obs-layercast\bin\64bit\`，`data/` 目录 → `C:\ProgramData\obs-studio\plugins\obs-layercast\data\` |
-| macOS | `obs-layercast.plugin` → `~/Library/Application Support/obs-studio/plugins/` |
+| Windows | 把 `obs-layercast-windows.zip` 解压到 `C:\ProgramData\obs-studio\plugins\` |
+| macOS（13+，Apple 芯片） | 把 `obs-layercast-macos.zip` 解压到 `~/Library/Application Support/obs-studio/plugins/` |
 | Linux | `obs-layercast.so` → `~/.config/obs-studio/plugins/obs-layercast/bin/64bit/`，`data/` → 同级的 `data/` 目录 |
 
 ### 直播中使用图层

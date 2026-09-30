@@ -53,8 +53,8 @@ All layers have the window's size and a transparent background, so they line up 
 
 | OS | Location |
 |---|---|
-| Windows | `obs-layercast.dll` → `C:\ProgramData\obs-studio\plugins\obs-layercast\bin\64bit\`, the `data/` folder → `C:\ProgramData\obs-studio\plugins\obs-layercast\data\` |
-| macOS | `obs-layercast.plugin` → `~/Library/Application Support/obs-studio/plugins/` |
+| Windows | Extract `obs-layercast-windows.zip` into `C:\ProgramData\obs-studio\plugins\` |
+| macOS (13+, Apple silicon) | Extract `obs-layercast-macos.zip` into `~/Library/Application Support/obs-studio/plugins/` |
 | Linux | `obs-layercast.so` → `~/.config/obs-studio/plugins/obs-layercast/bin/64bit/`, `data/` → the `data/` folder next to it |
 
 ### Stream with layers
