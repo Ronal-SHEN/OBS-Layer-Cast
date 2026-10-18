@@ -1,4 +1,5 @@
-// OBS Layer Cast: draws a shared Minecraft layer.
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Minecraft Layer Cast: draws a shared Minecraft layer.
 // Layers are rendered by Minecraft onto a transparent target and are therefore premultiplied.
 // OBS filters and blending expect straight alpha, so the colour is divided by alpha here.
 

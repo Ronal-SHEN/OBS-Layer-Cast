@@ -1,5 +1,6 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OBS Layer Cast shared-memory directory protocol (v1).
+ * Minecraft Layer Cast shared-memory directory protocol (v1).
  *
  * This header is the single source of truth for the layout; the Java side mirrors it in
  * mod/src/main/java/starship/layercast/share/Protocol.java. Keep both in sync.

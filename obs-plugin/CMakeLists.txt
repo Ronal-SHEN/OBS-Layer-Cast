@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 cmake_minimum_required(VERSION 3.22)
 
 project(obs-layercast VERSION 1.0.0 LANGUAGES C)

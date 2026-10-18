@@ -1,8 +1,8 @@
-# OBS Layer Cast
+# Minecraft Layer Cast
 
 **English** | [简体中文](README.zh-CN.md)
 
-OBS Layer Cast hooks into the Minecraft client's rendering pipeline to split F3, the scoreboard, boss bars, the TAB list, name tags, other HUD elements and HUDs drawn by other mods into independent transparent layers, then hands them to OBS through GPU texture sharing. In OBS each layer is a separate source, so streamers can freely control its visibility, position, scale and filters, while the player's own game view stays unchanged.
+Minecraft Layer Cast hooks into the Minecraft client's rendering pipeline to split F3, the scoreboard, boss bars, the TAB list, name tags, other HUD elements and HUDs drawn by other mods into independent transparent layers, then hands them to OBS through GPU texture sharing. In OBS each layer is a separate source, so streamers can freely control its visibility, position, scale and filters, while the player's own game view stays unchanged.
 
 The project has two parts: a Minecraft mod in [`mod/`](mod) (Fabric / NeoForge) and an OBS plugin in [`obs-plugin/`](obs-plugin).
 
@@ -105,3 +105,13 @@ A layer is only rendered while an OBS source is showing it, so unused layers cos
 Settings are stored in `config/layercast.json`. Besides **Split layers**, you can set the channel, the layer frame rate cap (default 60, never above OBS's frame rate) and the transport (auto / GPU only / CPU).
 
 **Several Minecraft instances**: if the configured channel is already used by another running game, the next one automatically switches to `<channel>-2`, `-3`, … and tells you in game. The source's **Channel** dropdown in OBS lists every game that is sharing. To keep an OBS source tied to one game across restarts, give each instance its own channel.
+
+## Reporting issues
+
+Report bugs and ask questions in [GitHub Issues](https://github.com/Ronal-SHEN/OBS-Layer-Cast/issues). Please include your OS, OBS version, Minecraft version and loader, and the log files (`logs/latest.log` of the game and the OBS log).
+
+## License
+
+The Minecraft mod (`mod/`) is licensed under the [Apache License 2.0](LICENSE). The OBS plugin (`obs-plugin/`) links against libobs and is licensed under the [GNU General Public License v2.0 or later](obs-plugin/LICENSE).
+
+Minecraft Layer Cast is an independent project. It is not affiliated with or endorsed by the OBS Project, Mojang Studios or Microsoft.

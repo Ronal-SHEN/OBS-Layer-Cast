@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 #include "lc-texture.h"
 
 bool lc_transport_supported(uint32_t transport)

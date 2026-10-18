@@ -1,4 +1,4 @@
-# OBS Layer Cast
+# Minecraft Layer Cast
 
 [English](README.md) | **简体中文**
 
@@ -105,3 +105,13 @@
 配置文件为 `config/layercast.json`。除「拆分图层」外，还可以设置频道、图层最大帧率（默认 60，且不超过 OBS 帧率）和传输方式（自动 / 仅 GPU / CPU）。
 
 **同时运行多个 Minecraft**：如果配置的频道已被另一个正在运行的游戏占用，后启动的游戏会自动改用 `<频道>-2`、`-3`……，并在游戏内提示。OBS 来源的「频道」下拉框会列出所有正在共享的游戏。想让 OBS 来源在重启后仍固定对应某个游戏，就给每个实例设置不同的频道。
+
+## 问题反馈
+
+请在 [GitHub Issues](https://github.com/Ronal-SHEN/OBS-Layer-Cast/issues) 中反馈问题或提问，并附上操作系统、OBS 版本、Minecraft 版本与加载器，以及日志文件（游戏的 `logs/latest.log` 和 OBS 日志）。
+
+## 许可证
+
+Minecraft 模组（`mod/`）使用 [Apache License 2.0](LICENSE)。OBS 插件（`obs-plugin/`）链接 libobs，使用 [GNU General Public License v2.0 或更高版本](obs-plugin/LICENSE)。
+
+Minecraft Layer Cast 是独立项目，与 OBS Project、Mojang Studios 和 Microsoft 均无关联，也未获其认可。

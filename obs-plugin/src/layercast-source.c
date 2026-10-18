@@ -1,5 +1,6 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * "Minecraft Layer (LayerCast)" source: shows one layer published by the OBS Layer Cast Minecraft mod.
+ * "Minecraft Layer (LayerCast)" source: shows one layer published by the Minecraft Layer Cast mod.
  *
  * Threading: create/destroy/update/properties run on the UI thread, video_tick/video_render on the graphics
  * thread. Everything touching the mapping or textures happens in video_tick/video_render; update() only stores

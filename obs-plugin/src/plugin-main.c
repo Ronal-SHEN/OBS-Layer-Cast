@@ -1,5 +1,6 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OBS Layer Cast — receives HUD layers shared by the Minecraft mod through GPU texture sharing.
+ * Minecraft Layer Cast — receives HUD layers shared by the Minecraft mod through GPU texture sharing.
  */
 #include <obs-module.h>
 
